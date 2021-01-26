@@ -26,6 +26,4 @@ $request = Request::createFromGlobals();
 $response = $kernel->handle($request);
 $response->send();
 
-dump($request);
-
 $kernel->terminate($request, $response);
