@@ -3,9 +3,9 @@ easy_admin:
 
   design:
     menu:
-      - { route: 'homepage', label: 'Back to the website', icon: 'home' }
-      - { entity: 'Conference', label: 'Conferences', icon: 'map-marker' }
-      - { entity: 'Comment', label: 'Comments', icon: 'comments' }
+      - { route: 'homepage', label: 'Назад к сайту', icon: 'home' }
+      - { entity: 'Conference', label: 'Конференции', icon: 'map-marker' }
+      - { entity: 'Comment', label: 'Комментарии', icon: 'comments' }
 
   entities:
     Conference:
@@ -15,10 +15,10 @@ easy_admin:
       class: App\Entity\Comment
       list:
         fields:
-          - author
-          - { property: 'email', type: 'email' }
-          - { property: 'createdAt', type: 'datetime' }
-          - { property: 'conference', type: 'string' }
+          - { property: 'author', label: 'Автор', type: 'string' }
+          - { property: 'email', label: 'Почта', type: 'email' }
+          - { property: 'createdAt', label: 'СозданоВ', type: 'datetime' }
+          - { property: 'conference', label: 'Конференция', type: 'string' }
         sort: ['createdAt', 'ASC']
         filters: ['conference']
       edit:
