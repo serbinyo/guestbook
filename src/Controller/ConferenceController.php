@@ -25,7 +25,6 @@ class ConferenceController extends AbstractController
 
     /**
      * @Route("/", name="homepage")
-     * @param Environment          $twig
      * @param ConferenceRepository $conferenceRepository
      *
      * @return Response
@@ -43,7 +42,6 @@ class ConferenceController extends AbstractController
     /**
      * @Route("/conference/{id}", name="conference")
      * @param Request           $request
-     * @param Environment       $twig
      * @param Conference        $conference
      * @param CommentRepository $commentRepository
      *
