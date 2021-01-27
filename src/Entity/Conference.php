@@ -27,7 +27,7 @@ class Conference
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $н�нyear;
+    private $year;
 
     /**
      * @ORM\Column(type="boolean")
@@ -61,14 +61,14 @@ class Conference
         return $this;
     }
 
-    public function getн�нyear(): ?string
+    public function getYear(): ?string
     {
-        return $this->н�нyear;
+        return $this->year;
     }
 
-    public function setн�нyear(string $н�нyear): self
+    public function setYear(string $year): self
     {
-        $this->н�нyear = $н�нyear;
+        $this->year = $year;
 
         return $this;
     }
